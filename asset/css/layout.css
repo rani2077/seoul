@@ -1,0 +1,280 @@
+@import url(./reset.css);
+@import url(./common.css);
+
+
+.header {}
+.header .inner {
+  width: 1152px;
+  margin: 0 auto;
+}
+.header .group-top {
+  display: flex;
+  height: 48px;
+  line-height: 48px;
+}
+.header .logo {
+  margin-top: 8px;
+}
+.header .logo a {}
+.header .logo a::before {
+  width: 105px;
+  height: 27px;
+  background-position: -5px -165px;
+}
+
+.header .gnb {
+  margin-left: 70px;
+}
+.header .gnb-list {
+  display: flex;
+  gap: 20px;
+}
+.header .gnb-item {}
+.header .gnb-item a {
+  font-size: 16px;
+  font-weight: bold;
+}
+.header .gnb-item a:hover {
+  color:  #2292e9;
+}
+.header .login-area {
+  display: flex;
+  margin-left: auto;
+}
+.header .login-area a {
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.header .group-bottom {
+  position: relative;
+  display: flex;
+  height: 120px;
+}
+.header .link-home {
+  margin-top: 38px;
+}
+.header .link-home img {}
+.header .search-area {
+  margin-left: 117px;
+}
+.header .search-area .inner {
+  position: relative;
+  width: 520px;
+  height: 42px;
+  margin-top: 40px;
+  border: 3px solid #2292e9;
+  box-sizing: border-box;
+}
+.header .search-area .input-text {
+  width: calc(100% - 42px);
+  height: 36px;
+  padding: 0 10px;
+  color: #767676;
+}
+.header .search-area .input-text::placeholder {
+  font-size: 14px;
+  color:#2292e9;
+}
+.header .search-area .btn-keyboard {
+  position: absolute;
+  top: 12px; right: 42px;
+  width: 29px; height: 16px;
+  background-image: url('../images/ico-keyboard.png');
+  cursor:pointer;
+}
+.header .search-area .btn-submit {
+  position: absolute;
+  top: 0; right: 0;
+  width: 36px; height: 36px;
+  cursor:pointer;
+}
+.header .search-area .btn-submit::before{
+  width: 36px; height: 36px;
+  background-position: -32px -97px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+}
+.header .language-area {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header .language-select {
+  width: 80px;
+  height: 21px;
+  padding-left: 2px;
+  border: 1px solid #afcfea;
+  color: #1E6CB3;
+  font-size: 12px;
+  background: url(../images/ico-select-arrow.png) no-repeat right 4px center;
+  box-sizing: border-box;
+  background-size: 8px auto;
+  appearance:none;
+}
+.header .language-option {}
+.header .link-go {
+  display: block;
+  width: 30px;
+  height: 21px;
+  line-height: 21px;
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  background-color: #1E6CB3;
+}
+.weather-area {
+  width: 290px;
+  margin-left: 19px;
+  margin-top: 34px;
+}
+.weather-area .link-weather {
+  display: flex;
+  align-items: center;
+}
+.weather-area .weather-img {
+  width: 58px; height: 47px;
+}
+.weather-area .weather-img img {}
+.weather-area .weather-info {
+  margin-left: 7px;
+}
+.weather-area .weather-info p {
+  line-height: 1;
+  margin-bottom: 7px;
+}
+.weather-area .weather-info p em {
+  font-size: 25px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.weather-area .weather-info span {
+  font-size: 13px;
+}
+.weather-area .weather-info span.blue{
+  color: #0667b5;
+}
+.seoul-brand{
+  width: 74px;
+  height: 100%;
+  position: relative;
+}
+.seoul-brand .link-seoul{
+  position: absolute;
+  width: 100%;
+  height: 47px;
+  left: 0;
+  bottom: 32px;
+}
+.seoul-brand .link-seoul img{
+  width: 100%;
+  height: 100%;
+}
+
+.footer {}
+.footer .inner {
+  width: 1152px;
+  margin: 0 auto;
+}
+.footer .group-corp {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.footer .corp-area {}
+.footer .corp-list {
+  display: flex;
+}
+.footer .corp-item {}
+.footer .corp-item::before {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  margin: 0 10px;
+  vertical-align: middle;
+  background: #dcdcdc;
+}
+.footer .corp-item:first-child::before {
+  content: none;
+}
+.footer .corp-item:last-child{
+  width: 114px;
+  height: 24px;
+  margin-left: 10px;
+}
+.footer .corp-item .kakao{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: 0 -30px;
+}
+.footer .corp-item:last-child::before{
+  content:none;
+}
+.footer .corp-item a {
+  font-size: 12px;
+  color: #636363;
+}
+.footer .corp-item strong {
+  font-weight: bold;
+  color: #000;
+}
+
+
+.footer .group-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  border-top: 1px solid #ccc;
+}
+.footer .left-area{
+  display: flex;
+}
+.footer .call-box {
+  margin-right: 40px;
+}
+.footer .call-box .call-bg::before {
+  width: 108px; height: 45px;
+  background-position: -180px 0;
+}
+.footer .address-box {}
+.footer .address-box p {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-right: auto;
+  font-size: 12px;
+  color: #636363;
+}
+.footer .address-box .address {}
+.footer .address-box .number {}
+.footer .address-box .copyright {
+  font-size: 11px;
+}
+.footer .mark-area {
+  display: flex;
+  gap: 10px;
+}
+.footer .mark-area .link-mark {}
+.footer .mark-area .link-mark img {}
+
+
+.btn-top {
+  position: fixed;
+  left: 50%; bottom: -100px; 
+  margin-left: 600px;
+  z-index: 30;
+  width: 34px; height: 34px;
+  opacity: 0;
+  transition: bottom 1s, opacity 1s;
+  cursor: pointer;
+}
+.btn-top.show {
+  bottom: 98px;
+  opacity: 1;
+}
